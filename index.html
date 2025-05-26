@@ -11,6 +11,382 @@
             box-sizing: border-box;
         }
 
+        /* Collection Section */
+        .collection-section {
+            padding: 120px 0;
+            background: white;
+        }
+
+        .collection-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .collection-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .collection-title {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .collection-subtitle {
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        .collection-track {
+            margin-bottom: 80px;
+        }
+
+        .collection-track:last-child {
+            margin-bottom: 0;
+        }
+
+        .track-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .track-title {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        .track-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .track-nav-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            background: white;
+            color: #666;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+        }
+
+        .track-nav-btn:hover {
+            border-color: #333;
+            color: #333;
+            transform: scale(1.1);
+        }
+
+        .items-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .items-track {
+            display: flex;
+            gap: 30px;
+            transition: transform 0.5s ease;
+            padding: 10px 0;
+        }
+
+        .collection-item {
+            min-width: 280px;
+            height: 350px;
+        }
+
+        .item-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .item-image:hover {
+            transform: scale(1.02);
+        }
+
+        .item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 30px 20px 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .item-image:hover .item-overlay {
+            opacity: 1;
+        }
+
+        .item-info h4 {
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .item-info p {
+            font-size: 14px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Art Work Images */
+        .art-1 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23c4a484" width="280" height="350"/><circle cx="140" cy="175" r="80" fill="%23a68b5b"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="white" font-size="16" font-family="Arial">Ceramic Art</text></svg>');
+        }
+
+        .art-2 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%238b7355" width="280" height="350"/><rect x="70" y="100" width="140" height="150" fill="%23a68b5b"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="white" font-size="16" font-family="Arial">Tapestry</text></svg>');
+        }
+
+        .art-3 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23606060" width="280" height="350"/><polygon points="140,80 200,200 140,270 80,200" fill="%23808080"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="white" font-size="16" font-family="Arial">Metal Art</text></svg>');
+        }
+
+        .art-4 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23a8c8ec" width="280" height="350"/><ellipse cx="140" cy="175" rx="60" ry="80" fill="%237bb3e0"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="white" font-size="16" font-family="Arial">Glass Art</text></svg>');
+        }
+
+        .art-5 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23d4b896" width="280" height="350"/><rect x="100" y="120" width="80" height="110" fill="%23a68b5b"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="white" font-size="16" font-family="Arial">Wood Art</text></svg>');
+        }
+
+        /* Product Images */
+        .product-1 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23f5f5f5" width="280" height="350"/><circle cx="140" cy="175" r="60" fill="%23c4a484"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="%23666" font-size="16" font-family="Arial">Dinnerware</text></svg>');
+        }
+
+        .product-2 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23f0f0f0" width="280" height="350"/><rect x="40" y="125" width="200" height="100" fill="%238b7355"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="%23666" font-size="16" font-family="Arial">Cutting Board</text></svg>');
+        }
+
+        .product-3 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23f8f8f8" width="280" height="350"/><rect x="20" y="150" width="240" height="50" fill="%23d4c5b0"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="%23666" font-size="16" font-family="Arial">Table Runner</text></svg>');
+        }
+
+        .product-4 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23f2f2f2" width="280" height="350"/><ellipse cx="140" cy="175" rx="40" ry="60" fill="%237bb3e0"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="%23666" font-size="16" font-family="Arial">Glass Vases</text></svg>');
+        }
+
+        .product-5 {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 350"><rect fill="%23f6f6f6" width="280" height="350"/><rect x="90" y="100" width="100" height="150" fill="%23996633"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="%23666" font-size="16" font-family="Arial">Leather Journal</text></svg>');
+        }
+
+        /* Responsive Design for Collection */
+        @media (max-width: 768px) {
+            .collection-section {
+                padding: 80px 0;
+            }
+
+            .collection-container {
+                padding: 0 20px;
+            }
+
+            .collection-header {
+                margin-bottom: 60px;
+            }
+
+            .collection-title {
+                font-size: 28px;
+                letter-spacing: 2px;
+            }
+
+            .collection-subtitle {
+                font-size: 14px;
+            }
+
+            .collection-track {
+                margin-bottom: 60px;
+            }
+
+            .track-header {
+                margin-bottom: 30px;
+            }
+
+            .track-title {
+                font-size: 20px;
+            }
+
+            .track-nav-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+
+            .collection-item {
+                min-width: 240px;
+                height: 300px;
+            }
+
+            .items-track {
+                gap: 20px;
+            }
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 120px 0;
+            background: #fafafa;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text {
+            max-width: 500px;
+        }
+
+        .about-title {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 40px;
+            line-height: 1.2;
+        }
+
+        .about-description {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .about-description:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-images {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            height: 400px;
+        }
+
+        .about-image-main {
+            grid-row: 1 / -1;
+        }
+
+        .about-image-small {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .image-placeholder {
+            background: #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-placeholder:hover {
+            background: #ddd;
+        }
+
+        .main-portrait {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"><rect fill="%23d4c5b0" width="400" height="500"/><circle cx="200" cy="180" r="60" fill="%23a68b5b"/><rect x="160" y="240" width="80" height="120" fill="%238b7355"/><text x="50%" y="90%" text-anchor="middle" dy=".3em" fill="%23666" font-size="14" font-family="Arial">Designer Portrait</text></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .small-work {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180"><rect fill="%23c4a484" width="200" height="180"/><circle cx="100" cy="90" r="40" fill="%23a68b5b"/><text x="50%" y="85%" text-anchor="middle" dy=".3em" fill="white" font-size="12" font-family="Arial">Ceramic Detail</text></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .small-process {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180"><rect fill="%238b7355" width="200" height="180"/><rect x="50" y="60" width="100" height="60" fill="%23a68b5b"/><text x="50%" y="85%" text-anchor="middle" dy=".3em" fill="white" font-size="12" font-family="Arial">Hand Crafting</text></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Responsive Design for About */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 80px 0;
+            }
+
+            .about-container {
+                padding: 0 20px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .about-title {
+                font-size: 28px;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+
+            .about-description {
+                font-size: 15px;
+            }
+
+            .about-images {
+                height: 300px;
+            }
+
+            .about-image-main {
+                grid-column: 1 / -1;
+                grid-row: 1;
+            }
+
+            .about-image-small {
+                grid-column: 1 / -1;
+                grid-row: 2;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                height: 120px;
+            }
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -104,9 +480,8 @@
         }
 
         .hero-section {
-            height: 80vh;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23e5e5e5" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%23999" font-size="24" font-family="Arial">Hero Background Image</text></svg>');
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
             background-size: cover;
             background-position: center;
             display: flex;
@@ -114,11 +489,40 @@
             justify-content: center;
             text-align: center;
             color: white;
+            position: relative;
+            transition: background-image 0.8s ease-in-out;
+        }
+
+        .hero-section.bg-1 {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23c4a484" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="32" font-family="Arial">Handcrafted Ceramics</text></svg>');
+        }
+
+        .hero-section.bg-2 {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%238b7355" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="32" font-family="Arial">Wooden Furniture</text></svg>');
+        }
+
+        .hero-section.bg-3 {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23a68b5b" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="32" font-family="Arial">Textile Art</text></svg>');
+        }
+
+        .hero-section.bg-4 {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23d4b896" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="32" font-family="Arial">Metal Sculptures</text></svg>');
+        }
+
+        .hero-section.bg-5 {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%239d8266" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="32" font-family="Arial">Glass Works</text></svg>');
         }
 
         .hero-content {
             max-width: 600px;
             padding: 0 20px;
+            z-index: 2;
+            position: relative;
         }
 
         .hero-title {
@@ -147,12 +551,68 @@
             margin: 0 auto;
         }
 
+        /* Background Navigation Controls */
+        .bg-nav-container {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .bg-nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .bg-nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+
+        .bg-indicators {
+            display: flex;
+            gap: 12px;
+        }
+
+        .bg-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .bg-indicator.active {
+            background: white;
+            border-color: white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .bg-indicator:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
         /* Footer */
         .footer {
             background: #333;
             color: white;
             padding: 40px 0;
-            margin-top: 80px;
+            margin-top: 0;
         }
 
         .footer-container {
@@ -238,6 +698,21 @@
                 font-size: 14px;
             }
 
+            .bg-nav-container {
+                bottom: 20px;
+            }
+
+            .bg-nav-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .bg-indicator {
+                width: 10px;
+                height: 10px;
+            }
+
             .footer-container {
                 padding: 0 20px;
             }
@@ -265,7 +740,7 @@
                 <a href="#bespoke">Bespoke</a>
             </nav>
             
-            <div class="logo">Your Brand</div>
+            <div class="logo">wen</div>
             
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Search...">
@@ -279,14 +754,205 @@
     <!-- Main Content -->
     <main class="main-content">
         <!-- Hero Section -->
-        <section class="hero-section" id="home">
+        <section class="hero-section bg-1" id="home">
             <div class="hero-content fade-in">
-                <h1 class="hero-title">Timeless Design</h1>
+                <h1 class="hero-title">Craft By Wen</h1>
                 <p class="hero-subtitle">Minimalist • Contemporary • Authentic</p>
                 <p class="hero-description">
                     We create exceptional design pieces that transcend trends and speak to the essence of modern living. 
                     Each creation is thoughtfully crafted with attention to detail and a commitment to quality.
                 </p>
+            </div>
+
+            <!-- Background Navigation -->
+            <div class="bg-nav-container">
+                <button class="bg-nav-btn" id="bgPrevBtn">‹</button>
+                
+                <div class="bg-indicators">
+                    <div class="bg-indicator active" data-bg="1"></div>
+                    <div class="bg-indicator" data-bg="2"></div>
+                    <div class="bg-indicator" data-bg="3"></div>
+                    <div class="bg-indicator" data-bg="4"></div>
+                    <div class="bg-indicator" data-bg="5"></div>
+                </div>
+                
+                <button class="bg-nav-btn" id="bgNextBtn">›</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="about-title">About Wen</h2>
+                        <p class="about-description">
+                            A designer rooted in the philosophy of mindful creation, Wen transforms raw materials into objects that speak to the soul. 
+                            With over a decade of experience in contemporary craft, each piece reflects a deep understanding of form, function, and the 
+                            beauty found in simplicity.
+                        </p>
+                        <p class="about-description">
+                            Working from a studio in Brooklyn, Wen combines traditional techniques with modern sensibilities, creating pieces that are 
+                            both timeless and distinctly contemporary. Every creation tells a story of careful consideration and artistic integrity.
+                        </p>
+                    </div>
+                    
+                    <div class="about-images">
+                        <div class="about-image-main">
+                            <div class="image-placeholder main-portrait">
+                                <span>Wen in Studio</span>
+                            </div>
+                        </div>
+                        <div class="about-image-small">
+                            <div class="image-placeholder small-work">
+                                <span>Work Detail</span>
+                            </div>
+                            <div class="image-placeholder small-process">
+                                <span>Process</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection Section -->
+        <section class="collection-section" id="collection">
+            <div class="collection-container">
+                <div class="collection-header">
+                    <h2 class="collection-title">Collection</h2>
+                    <p class="collection-subtitle">Art & Products</p>
+                </div>
+
+                <!-- Art Works Track -->
+                <div class="collection-track">
+                    <div class="track-header">
+                        <h3 class="track-title">Art Works</h3>
+                        <div class="track-nav">
+                            <button class="track-nav-btn" id="artPrev">‹</button>
+                            <button class="track-nav-btn" id="artNext">›</button>
+                        </div>
+                    </div>
+                    <div class="items-container">
+                        <div class="items-track" id="artTrack">
+                            <div class="collection-item">
+                                <div class="item-image art-1">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Ceramic Vessel Series</h4>
+                                            <p>Hand-thrown stoneware</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image art-2">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Woven Tapestry</h4>
+                                            <p>Natural fiber composition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image art-3">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Metal Sculpture</h4>
+                                            <p>Oxidized steel installation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image art-4">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Glass Formation</h4>
+                                            <p>Blown glass experiment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image art-5">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Wood Carving</h4>
+                                            <p>Reclaimed oak piece</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Track -->
+                <div class="collection-track">
+                    <div class="track-header">
+                        <h3 class="track-title">Products</h3>
+                        <div class="track-nav">
+                            <button class="track-nav-btn" id="productPrev">‹</button>
+                            <button class="track-nav-btn" id="productNext">›</button>
+                        </div>
+                    </div>
+                    <div class="items-container">
+                        <div class="items-track" id="productTrack">
+                            <div class="collection-item">
+                                <div class="item-image product-1">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Ceramic Dinnerware</h4>
+                                            <p>$180 - Set of 4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image product-2">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Wooden Cutting Board</h4>
+                                            <p>$95 - Walnut & Maple</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image product-3">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Linen Table Runner</h4>
+                                            <p>$65 - Hand-woven</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image product-4">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Glass Vase Collection</h4>
+                                            <p>$120 - Set of 3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection-item">
+                                <div class="item-image product-5">
+                                    <div class="item-overlay">
+                                        <div class="item-info">
+                                            <h4>Leather Journal</h4>
+                                            <p>$85 - Hand-stitched</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -308,22 +974,106 @@
     </footer>
 
     <script>
-        // Simple mobile menu toggle (you can expand this)
+        // Background switching functionality
+        let currentBg = 1;
+        const totalBgs = 5;
+        const heroSection = document.querySelector('.hero-section');
+        const bgIndicators = document.querySelectorAll('.bg-indicator');
+        const bgPrevBtn = document.getElementById('bgPrevBtn');
+        const bgNextBtn = document.getElementById('bgNextBtn');
+
+        function updateBackground() {
+            // Remove all background classes
+            for (let i = 1; i <= totalBgs; i++) {
+                heroSection.classList.remove(`bg-${i}`);
+            }
+            
+            // Add current background class
+            heroSection.classList.add(`bg-${currentBg}`);
+            
+            // Update indicators
+            bgIndicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentBg - 1);
+            });
+        }
+
+        function nextBackground() {
+            currentBg = currentBg === totalBgs ? 1 : currentBg + 1;
+            updateBackground();
+        }
+
+        function prevBackground() {
+            currentBg = currentBg === 1 ? totalBgs : currentBg - 1;
+            updateBackground();
+        }
+
+        function goToBackground(bgNum) {
+            currentBg = bgNum;
+            updateBackground();
+        }
+
+        // Event listeners for background switching
+        bgNextBtn.addEventListener('click', nextBackground);
+        bgPrevBtn.addEventListener('click', prevBackground);
+
+        // Indicator clicks
+        bgIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => goToBackground(index + 1));
+        });
+
+        // Auto-change background every 5 seconds
+        setInterval(nextBackground, 5000);
+
+        // Collection track functionality
+        let artTrackPosition = 0;
+        let productTrackPosition = 0;
+        const itemWidth = 310; // 280px + 30px gap
+        const itemsPerView = Math.floor(1200 / itemWidth); // approximate items visible
+        const maxItems = 5;
+
+        function updateTrack(trackId, position) {
+            const track = document.getElementById(trackId);
+            track.style.transform = `translateX(-${position * itemWidth}px)`;
+        }
+
+        function nextTrack(trackType) {
+            if (trackType === 'art') {
+                artTrackPosition = Math.min(artTrackPosition + 1, maxItems - itemsPerView);
+                updateTrack('artTrack', artTrackPosition);
+            } else {
+                productTrackPosition = Math.min(productTrackPosition + 1, maxItems - itemsPerView);
+                updateTrack('productTrack', productTrackPosition);
+            }
+        }
+
+        function prevTrack(trackType) {
+            if (trackType === 'art') {
+                artTrackPosition = Math.max(artTrackPosition - 1, 0);
+                updateTrack('artTrack', artTrackPosition);
+            } else {
+                productTrackPosition = Math.max(productTrackPosition - 1, 0);
+                updateTrack('productTrack', productTrackPosition);
+            }
+        }
+
+        // Collection navigation event listeners
+        document.getElementById('artNext').addEventListener('click', () => nextTrack('art'));
+        document.getElementById('artPrev').addEventListener('click', () => prevTrack('art'));
+        document.getElementById('productNext').addEventListener('click', () => nextTrack('product'));
+        document.getElementById('productPrev').addEventListener('click', () => prevTrack('product'));
+
+        // Original functionality
         document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            // Add mobile menu functionality here
             alert('Mobile menu - implement dropdown navigation');
         });
 
-        // Search functionality
         document.querySelector('.search-btn').addEventListener('click', function() {
             const searchTerm = document.querySelector('.search-input').value;
             if (searchTerm) {
                 alert('Search for: ' + searchTerm);
-                // Implement actual search functionality
             }
         });
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('.nav-left a').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
